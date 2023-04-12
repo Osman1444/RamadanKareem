@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    body {
+        background-image: url('60689de549191.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        backdrop-filter: blur(5px);
+        overflow: hidden;
+            user-select: none;
+    }
+
+    .window{
+            background-color: rgba(255, 255, 255, 0.8);
+            width: 500px;
+            height: 600px;
+            border-radius: 15%;
+            backdrop-filter: blur(5px);
+            transition: box-shadow 0.5s ease;
+            box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.9);
+            overflow-y: scroll;
+        }
+        ::-webkit-scrollbar {
+            width: 0px;
+        }
+    .window:hover{
+        box-shadow: inset 0 0 80px rgba(0, 0, 0, 0.9);
+    }
+
+    .text{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    button{
+        width: 350px;
+        border-radius: 50px;
+        transition: background-color 0.5s ease;
+    }
+
+    button:hover {
+        background-color: #494949;
+        color: rgb(255, 255, 255);
+    }
+
+    button:active {
+        background-color: #000000;
+        color: rgb(231, 231, 231)
+    }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramadan Calender</title>
+</head>
+<body>
+    <center>
+        <div class="window" id="window">
+            <img src="pngtree-modern-arabic-sign-of-ramadan-kareem-png-image_6090427.png"
+            width="200" >
+            <br>
+            <button><p class="text"> رمضان 1 / 23 مارس</p></button><br><br>
+            <button><p class="text"> رمضان 2 / 24 مارس</p></button><br><br>
+            <button><p class="text"> رمضان 3 / 25 مارس</p></button><br><br>
+            <button><p class="text"> رمضان 4 / 26 مارس</p></button><br><br>
+            <button><p class="text"> رمضان 5 / 27 مارس</p></button><br><br>
+            <button><p class="text"> رمضان 6 / 28 مارس</p></button><br><br>
+            <button><p class="text"> رمضان 7 / 29 مارس</p></button><br><br>
+            <button><p class="text"> رمضان 8 / 30 مارس</p></button><br><br>
+            <button><p class="text"> رمضان 9 / 31 مارس</p></button><br><br>
+            <button><p class="text"> رمضان 10 / 1 أبريل</p></button><br><br>
+            <button><p class="text"> رمضان 11 / 2 أبريل</p></button><br><br>
+            <button><p class="text"> رمضان 12 / 3 أبريل</p></button><br><br>
+            <button><p class="text"> رمضان 13 / 4 أبريل</p></button><br><br>
+            <button><p class="text"> رمضان 14 / 5 أبريل</p></button><br><br>
+            <button><p class="text"> رمضان 15 / 6 أبريل</p></button><br><br>
+            <button><p class="text"> رمضان 16 / 7 أبريل</p></button><br><br>
+            <button><p class="text"> رمضان 17 / 8 أبريل</p></button><br><br>
+            <button><p class="text"> رمضان 18 / 9 أبريل</p></button><br><br>
+            <button><p class="text"> رمضان 19 / 10 أبريل</p></button><br><br>
+            <button><p class="text"> رمضان 20 / 11 أبريل</p></button><br><br>
+            <button><p class="text"> رمضان 21 / 12 أبريل</p></button><br><br>
+            <button><p class="text"> رمضان 22 / 13 أبريل</p></button><br><br>
+            <button><p class="text"> رمضان 23 / 14 أبريل</p></button><br><br>
+            <button><p class="text"> رمضان 24 / 15 أبريل</p></button><br><br>
+            <button><p class="text"> رمضان 25 / 16 أبريل</p></button><br><br>
+            <button><p class="text"> رمضان 26 / 17 أبريل</p></button><br><br>
+            <button><p class="text"> رمضان 27 / 18 أبريل</p></button><br><br>
+            <button><p class="text"> رمضان 28 / 19 أبريل</p></button><br><br>
+            <button><p class="text"> رمضان 29 / 20 أبريل</p></button><br><br>
+            <button><p class="text"> رمضان 30 / 21 أبريل</p></button><br><br>
+         </div>
+         
+    </center>
+    <script>
+        // استرداد الوضع الحالي من Local Storage
+    var mode = localStorage.getItem('mode');
+    if (mode === 'dark') {
+    document.documentElement.setAttribute('color-scheme', 'dark');
+    document.documentElement.style.colorScheme = 'dark';
+    document.getElementById('window').style.backgroundColor =  'rgba(200, 200, 200, 0.8)';
+    } else {
+    document.documentElement.setAttribute('color-scheme', 'light');
+    document.documentElement.style.colorScheme = 'light';
+    document.getElementById('window').style.backgroundColor =  'rgba(255, 255, 255, 0.8)';
+    }
+document.addEventListener('contextmenu', function(event) {
+  event.preventDefault();
+});
+    </script>
+</body>
+</html>
